@@ -369,6 +369,10 @@ p {
 }
 
 
+
+
+
+
 .cm-section {
   max-width: 1920px;
   padding-top: 5%;
@@ -2611,6 +2615,11 @@ input[type="radio"]:checked {
     padding: 30px 30px 30px 30px;
   }
 
+  /* animated map  */
+
+  #map-container{
+    max-width: 100%;
+  }
 
 
   /* arrow img  */
