@@ -59,7 +59,7 @@ h6 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 44px;
   line-height: 1.2em;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 p {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.6em;
 }
 
@@ -108,7 +108,7 @@ p {
 /* nav-custom-style */
 
 .nav-custom-style li a {
-  font-size: 25px;
+  font-size: 22px;
   font-size: 800;
 }
 
@@ -240,7 +240,7 @@ p {
   font-family: RoundedMplus1c-bold;
   min-width: 221px;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   display: inline-block;
   border: 8px solid;
   border-image-source: url("../IMG/btn-border.svg");
@@ -286,7 +286,7 @@ p {
 } */
 
 .hero-title {
-  font-size: 60px;
+  font-size: 54px;
   line-height: 1.25em;
 }
 
@@ -296,7 +296,7 @@ p {
 }
 
 .hero-info-text {
-  font-size: 30px;
+  font-size: 25px;
   color: #D0DAFE;
 }
 
@@ -516,7 +516,7 @@ p {
   font-family: 'Rowdies', cursive;
   padding: 0;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -528,7 +528,7 @@ p {
 
 
 .counter-container {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   color: #EBEFFF;
 }
@@ -778,10 +778,10 @@ input[type="radio"]:checked {
 .blurb-title h3 {
   color: #FFF;
   font-family: RoundedMplus1c-800;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 800;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .icon-blurb-container .icon-blurb:last-child {
@@ -894,7 +894,7 @@ input[type="radio"]:checked {
 } */
 
 .font-sm {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -916,7 +916,7 @@ input[type="radio"]:checked {
 }
 
 .card-price-title {
-  font-size: 25px;
+  font-size: 22px;
   font-family: RoundedMplus1c-800;
   font-weight: 800;
   margin-bottom: 10px;
@@ -929,7 +929,7 @@ input[type="radio"]:checked {
 }
 
 .card-cost-title {
-  font-size: 25px;
+  font-size: 22px;
   font-family: RoundedMplus1c-800;
   font-weight: 800;
   margin-bottom: 10px;
@@ -1192,7 +1192,7 @@ input[type="radio"]:checked {
 
 .document-item {
   padding-top: 61px;
-  padding-bottom: 71px;
+  padding-bottom: 55px;
   border-bottom: 1px solid #E1C9FF;
   margin-right: 8%;
 }
@@ -1207,15 +1207,15 @@ input[type="radio"]:checked {
 }
 
 .document-item .document-title {
-  font-size: 25px;
-  font-weight: 800;
-  font-family: RoundedMplus1c-bold;
-  margin-bottom: 43px;
+  font-size: 22px;
+font-weight: 800;
+font-family: RoundedMplus1c-bold;
+margin-bottom: 35px;
 }
 
 .document-info {
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5em;
 }
 
@@ -1232,7 +1232,7 @@ input[type="radio"]:checked {
 
 .copy-right-text {
   color: #D0DAFE;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -1242,10 +1242,10 @@ input[type="radio"]:checked {
 
 
 .form-title {
-  font-size: 25px;
+  font-size: 22px;
   font-family: RoundedMplus1c-800;
   text-transform: inherit;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #D0DAFE;
   line-height: 1.8em;
   text-transform: uppercase;
@@ -1422,20 +1422,20 @@ input[type="radio"]:checked {
   /* Global */
 
   .cmn-h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .font-sm {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .outline-button {
     min-width: 190px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .mb-5 {
@@ -1460,7 +1460,7 @@ input[type="radio"]:checked {
   /* Header */
 
   .nav-custom-style li a {
-    font-size: 18px;
+    font-size: 16px;
     font-size: 800;
   }
 
@@ -1477,11 +1477,11 @@ input[type="radio"]:checked {
   }
 
   .hero-title {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .hero-info-text {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .hero-featured {
@@ -1523,7 +1523,7 @@ input[type="radio"]:checked {
   }
 
   .counter-container {
-    font-size: 20px;
+    font-size: 18px;
 
   }
 
@@ -1532,7 +1532,7 @@ input[type="radio"]:checked {
   }
 
   .counter-box p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
@@ -1553,12 +1553,21 @@ input[type="radio"]:checked {
   }
 
   .blurb-title h3 {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 20px;
   }
 
   .blurb-des p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+
+  .card-price-title {
+    font-size: 20px;
+  }
+
+  .card-cost-title {
+    font-size: 20px;
   }
 
 
@@ -1570,12 +1579,12 @@ input[type="radio"]:checked {
   }
 
   .document-item .document-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
 
   .document-info {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .document-item {
