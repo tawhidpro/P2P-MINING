@@ -37,6 +37,10 @@
   --animate-duration: 3s;
 }
 
+html {
+  scroll-behavior: smooth!important;
+}
+
 
 
 
@@ -237,18 +241,27 @@ p {
   min-width: 221px;
   text-align: center;
   font-size: 25px;
-
+  display: inline-block;
   border: 8px solid;
   border-image-source: url("../IMG/btn-border.svg");
   border-image-slice: 8;
   background: transparent;
   border-radius: 15px;
+  transition: 0.3s;
+
+
 }
 
 .outline-button:hover {
   background: url(../IMG/Gradient.png);
   background-position: center;
+  transform: scaleX(0.95) scaleY(0.95) !important;
 }
+
+
+
+
+
 
 
 /* .outline-button:hover {
@@ -406,6 +419,26 @@ p {
   top: -6%;
   left: -10%;
   background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.play-btn::after{
+  content: "";
+  display: block;
+  background: url('../IMG/playicon.svg');
+  width: 38px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.play-btn:hover{
+  transform: scaleX(0.95) scaleY(0.95) !important;
 }
 
 .play-btn i {
@@ -439,13 +472,14 @@ p {
   border-image-source: url("../IMG/card-border.png");
   border-image-slice: 20;
   border-radius: 20px;
+  transition: 0.3s;
 }
 
 .card-style:hover {
-  /* background: linear-gradient(180deg, #0E205E 0%, rgba(132, 228, 164, 0.29) 100%); */
-  /* background: linear-gradient(180deg, #0E205E 0%, rgba(132, 228, 164, 0.29) 100%); */
   background: url(../IMG/Gradient.png);
   background-position: center;
+  transform: scaleX(0.95) scaleY(0.95) !important;
+  transition: 0.3s!important;
 
 }
 
@@ -508,6 +542,22 @@ p {
 .lighting-style {
   max-width: 100%;
   margin: auto;
+}
+
+
+/* Modal  */
+
+.modal {
+  --bs-modal-width: 50%;
+  padding: 20px;
+  background: linear-gradient(180deg, #0E205E 0%, rgba(132, 228, 164, 0.29) 100%);
+}
+.modal-content{
+  border-radius: 20px;
+}
+
+.modal iframe{
+  border-radius: 20px;
 }
 
 /* calculate-section  */
@@ -600,6 +650,26 @@ p {
   margin-bottom: 0;
 }
 
+/* Hide the default radio button */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #90A8F9;
+  outline: none;
+  margin-right: 5px;
+}
+
+/* Change the radio button's border and background color when checked */
+input[type="radio"]:checked {
+  border-color: #90A8F9;
+  background-color: #90A8F9;
+}
+
+
 .contract-cost-title {
   font-family: RoundedMplus1c-800;
   color: #9B5BEA;
@@ -636,7 +706,7 @@ p {
   border-radius: 12px;
   background: url('../IMG/gradient-bg-2.png');
   background-position: center;
-  padding: 40px 28px;
+  padding: 27px 28px;
   border: 10px solid;
   border-image-source: url("../IMG/border.svg");
   border-image-slice: 10;
@@ -913,6 +983,9 @@ p {
   background: transparent;
   border-radius: 15px;
   position: relative;
+  display: inline-block;
+  transition: 0.3s;
+
 }
 
 .outline-icon-btn::before {
@@ -937,7 +1010,9 @@ p {
 .outline-icon-btn:hover {
   background: url(../IMG/btn-bg.jpg);
   background-position: center;
-  border: 6px solid transparent;
+  /* border: 6px solid transparent; */
+  transform: scaleX(0.95) scaleY(0.95) !important;
+  
 }
 
 
@@ -1043,10 +1118,39 @@ p {
   padding-bottom: 9%;
 }
 
-.document-row .document-info-box:nth-child(2) {
+/* .document-row .document-info-box:nth-child(2) {
   border-right: 1px solid #E1C9FF;
   border-left: 1px solid #E1C9FF;
+} */
+
+.document-row .document-info-box:nth-child(2)::before{
+  content: '';
+  display: block;
+  background: url('../IMG/divider.svg');
+  width: 1px;
+  background-size: contain;
+  height: 165px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
+.document-row .document-info-box:nth-child(2)::after{
+  content: '';
+  display: block;
+  background: url('../IMG/divider.svg');
+  width: 1px;
+  background-size: contain;
+  height: 165px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
 
 
 
@@ -1071,7 +1175,7 @@ p {
 .document-item {
   padding-top: 61px;
   padding-bottom: 71px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #E1C9FF;
   margin-right: 8%;
 }
 
@@ -1102,7 +1206,7 @@ p {
 
 
 .footer-style {
-  background: linear-gradient(89deg, rgba(32, 42, 46, 0.70) 0%, rgba(42, 42, 42, 0.70) 100%);
+  background: linear-gradient(89deg, rgb(32, 42, 46) 0%, rgb(42, 42, 42) 100%);
   padding-top: 70px;
   padding-bottom: 91px;
 
@@ -1228,14 +1332,19 @@ p {
 }
 
 
+#scroll-to-top{
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+}
 
-
-
-
-
-
-
-
+#scroll-to-top img{
+  max-width: 40px;
+}
 
 
 
@@ -1639,6 +1748,11 @@ p {
     height: 83px;
   }
 
+  .play-btn::after {
+    width: 16px;
+    height: 19px;
+  }
+
   .play-btn i {
     color: #fff;
     font-size: 20px;
@@ -1843,12 +1957,21 @@ p {
   .document-row {
     padding-top: 50px;
     padding-bottom: 50px;
+    display: block;
+  }
+
+  .document-row .document-info-box:nth-child(2)::before{
+    display: none;
+  }
+  .document-row .document-info-box:nth-child(2)::after{
+    display: none;
   }
 
   .document-row .document-info-box {
     max-width: 253px;
     margin: auto;
     margin-bottom: 40px;
+    /* display: block; */
   }
 
   .document-row .document-info-box:last-child {
@@ -2029,7 +2152,7 @@ p {
   } */
 
   .hero-section {
-    background-image: url("../IMG/mobile-bg.svg");
+    /* background-image: url("../IMG/mobile-bg.svg"); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px 250px;
@@ -2079,6 +2202,11 @@ p {
     width: 83px;
     height: 83px;
   }
+  .play-btn::after {
+    width: 16px;
+    height: 19px;
+  }
+
 
   .play-btn i {
     color: #fff;
@@ -2126,7 +2254,7 @@ p {
   }
 
   .counter-container {
-    font-size: 35px;
+    font-size: 28px;
 
   }
 
@@ -2135,7 +2263,7 @@ p {
   }
 
   .counter-box p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .lighting-style::before {
@@ -2308,6 +2436,13 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .document-row .document-info-box:nth-child(2)::before{
+    display: none;
+  }
+  .document-row .document-info-box:nth-child(2)::after{
+    display: none;
+  }
+
 
   .review-section {
     padding-top: 80px;
