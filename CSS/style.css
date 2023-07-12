@@ -355,6 +355,20 @@ p {
 
 /* Cloud mining section */
 
+/* CSS to rotate the image */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* CSS to style the image container */
+#map-container {
+  margin: 0 auto;
+  animation: rotate 30s linear infinite; /* adjust the animation duration as needed */
+  margin-left: -18%;
+}
+
+
 .cm-section {
   max-width: 1920px;
   padding-top: 5%;
